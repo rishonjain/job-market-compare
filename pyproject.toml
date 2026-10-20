@@ -1,0 +1,20 @@
+[project]
+name = "jobscan"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "requests",
+    "duckdb",
+    "pytz>=2026.5",
+    "python-jobspy>=1.4.0",
+    "beautifulsoup4>=4.15.0",
+    "streamlit>=1.66.0",
+    "langdetect>=1.0.9",
+    "pandas>=3.0.6",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
